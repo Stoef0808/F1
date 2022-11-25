@@ -5,6 +5,12 @@ import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
 
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊",
+    layout="centered",
+)
+
 col1, col2 = st.columns(2)
 #from page_1 import player
 with col1:
