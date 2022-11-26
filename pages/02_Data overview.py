@@ -11,9 +11,14 @@ st.set_page_config(
     layout="centered",
 )
 
-col1, col2 = st.columns(2)
+col1, col2, col3, col4 = st.columns(4)
 #from page_1 import player
-with col1:
+
+with col1: 
+    st.empty()
+
+    
+with col2:
     st.title('Results of player 1')
     
     df = st.session_state['df']
@@ -70,7 +75,7 @@ with col1:
     
     
 
-with col2:
+with col3:
     st.title('Results of player 2')
     df1 = st.session_state['df1']
     st.subheader('Collected data of player 2')
@@ -111,7 +116,8 @@ with col2:
     pl2 = pl2[(pl2['lap_time_y'] == pl2['lap_time_y'].min())]
     st.session_state['pl2'] = pl2
 
-
+with col4:
+    st.empty()
 
 
 

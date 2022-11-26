@@ -9,16 +9,12 @@ import datetime
 pl1 = st.session_state['pl1']
 pl2 = st.session_state['pl2'] 
 
-#st.write(maxTime)
-st.write(pl1)
-st.write(pl2)
-
 
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=pl1["lap_time_x"], y=pl1["velocity_X"], name='player 1'))
 fig.add_trace(go.Scatter(x=pl2["lap_time_x"], y=pl2["velocity_X"], name='player 2'))
 fig.update_layout(
-    width=1100,
+    width=1200,
     height=1000,
     autosize=False,
     margin=dict(t=0, b=0, l=0, r=0),
