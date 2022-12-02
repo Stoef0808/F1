@@ -9,7 +9,12 @@ st.set_page_config(
 
 st.title("Data Driven Business Lab")
 st.subheader("F1 project")
-st.markdown("""
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True,"""
 Welcome to the DDBL F1 project. On this page you can upload your CSV files. 
 """)
 
