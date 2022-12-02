@@ -27,3 +27,12 @@ if uploaded_file is not None:
     df1 = pd.read_csv(uploaded_file, sep = '\t')
     df1['filename'] = uploaded_file.name
     st.session_state['df1'] = df1
+
+    
+    hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
