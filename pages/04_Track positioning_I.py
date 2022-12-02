@@ -6,6 +6,9 @@ import streamlit as st
 import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
 
 
 #load in cached data
@@ -24,6 +27,15 @@ fig.update_layout(
 )
 st.plotly_chart(fig)
 
+
+color = pl1['velocity_X']
+x = pl1['world_position_X']          # values for x-axis
+y = pl1['world_position_Y']
+colormap = mpl.cm.plasma
+points = np.array([x, y]).T.reshape(-1, 1, 2)
+segments = np.concatenate([points[:-1], points[1:]], axis=1)
+
+
 fig, ax = plt.subplots(sharex=True, sharey=True, figsize=(12, 6.75))
 #fig.suptitle(f'{weekend.name} {year} - {driver} - Speed', size=24, y=0.97)
 
@@ -32,7 +44,7 @@ ax.axis('off')
 
 # After this, we plot the data itself.
 # Create background track line
-ax.plot(test['world_position_X'] , test['world_position_Y'] , color='black', linestyle='-', linewidth=15, zorder=0)
+ax.plot(pl1['world_position_X'] , pl1['world_position_Y'] , color='black', linestyle='-', linewidth=15, zorder=0)
 
 # Create a continuous norm to map from data points to colors
 norm = plt.Normalize(color.min(), color.max())
