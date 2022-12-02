@@ -35,4 +35,4 @@ if uploaded_file is not None:
             footer {visibility: hidden;}
             </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
