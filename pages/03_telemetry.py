@@ -5,6 +5,10 @@ import plotly.graph_objects as go
 import pandas as pd
 import datetime
 
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🏎️"
+)
 
 pl1 = st.session_state['pl1']
 pl2 = st.session_state['pl2'] 
