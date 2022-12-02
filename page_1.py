@@ -9,12 +9,12 @@ st.set_page_config(
 
 st.title("Data Driven Business Lab")
 st.subheader("F1 project")
-hide_st_style = """
+kanker = """
             <style>
             footer {visibility: hidden;}
             </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+st.markdown(kanker)
 
 
 
