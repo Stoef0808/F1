@@ -9,12 +9,9 @@ st.set_page_config(
 
 st.title("Data Driven Business Lab")
 st.subheader("F1 project")
-kanker = """
-            <style>
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(kanker)
+st.markdown("""
+Welcome to the DDBL F1 project. On this page you can upload your CSV files. 
+""")
 
 
 
