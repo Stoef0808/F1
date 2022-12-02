@@ -6,7 +6,7 @@ import pandas as pd
 import datetime
 
 st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
+    page_title="F1 Telemetry App",
     page_icon="🏎️"
 )
 
