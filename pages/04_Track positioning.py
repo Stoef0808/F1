@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title="F1 Telemetry App",
-    page_icon="🏎️"
+    page_icon="🏎️",
 )
 
 #load in cached data
