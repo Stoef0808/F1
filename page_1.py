@@ -5,7 +5,7 @@ import numpy
 st.set_page_config(
     page_title="F1 Telemetry App",
     page_icon="🏎️",
-    initial_sidebar_state="hidden",
+    initial_sidebar_state="expanded",
 )
 
 st.title("Data Driven Business Lab")
