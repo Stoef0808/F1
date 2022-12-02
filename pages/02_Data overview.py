@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title="Ex-stream-ly Cool App",
-    page_icon="🧊",
+    page_icon="🏎️",
     layout="centered",
 )
 
