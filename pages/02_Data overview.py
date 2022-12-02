@@ -4,11 +4,11 @@ import numpy as np
 import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
+import re
 
 st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
-    page_icon="🧊",
-    layout="centered",
+    page_title="Summary of the race data",
+    layout="wide",
 )
 
 col1, col2, col3, col4 = st.columns(4)
@@ -19,9 +19,13 @@ with col1:
 
     
 with col2:
-    st.title('Results of player 1')
+    
+
     
     df = st.session_state['df']
+
+    st.title('Results of player 1')
+
     st.subheader('Collected data of player 1')
     with st.expander('Show data'):
         st.write(df.head(1000))
