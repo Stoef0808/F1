@@ -14,9 +14,7 @@ hide_st_style = """
             footer {visibility: hidden;}
             </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True,"""
-Welcome to the DDBL F1 project. On this page you can upload your CSV files. 
-""")
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
