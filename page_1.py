@@ -2,13 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy
 
-hide_streamlit_style = """
-            <style>
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-
 st.set_page_config(
     page_title="F1 Telemetry App",
     page_icon="🏎️",
