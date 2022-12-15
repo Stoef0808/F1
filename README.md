@@ -21,7 +21,7 @@ The requirements for this project are:
 
 Before you start recording the data, your F1 game needs to be on the following settings.
 - Grand prix
-- 5 laps (very short)
+- 5 laps (short)
 - Cars need to be on equal performance
 - Currently we only have the corners mapped out for spain but it will be a feature that can be added in the future. But other circuits can also be raced at but corners won't be mapped out in the telemetry.
 - Currently you need to upload 2 player files, if you upload one file it will show errors. 
