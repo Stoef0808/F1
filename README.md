@@ -17,6 +17,15 @@ The requirements for this project are:
 - Matplotlib 3.3.4
 - Numpy 1.20.1
 
+## Settings
+
+Before you start recording the data, your F1 game needs to be on the following settings.
+- Grand prix
+- 5 laps (very short)
+- Cars need to be on equal performance
+- Currently we only have the corners mapped out for spain but it will be a feature that can be added in the future. But other circuits can also be raced at but corners won't be mapped out in the telemetry.
+- Currently you need to upload 2 player files, if you upload one file it will show errors. 
+
 ## Data collection
 
 The data used in this notebook is gathered from the F1 2021 game. To extract data out of the game we use Sim Racing Telemetry. This is a 3d party application on steam that allows to record sessions in F1. It has an understandable UI and low effort in set up to connect to the game. All it requires the user to do is input the IP address of the device trying to connect to the game, into the telemetry settings of the game. 
