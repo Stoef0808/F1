@@ -7,6 +7,10 @@ import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
 
+st.set_page_config(
+    page_title="F1 Telemetry App",
+    page_icon="🏎️",
+)
 
 #load in cached data
 pl1 = st.session_state['pl1']
