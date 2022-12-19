@@ -3,11 +3,15 @@ import pandas as pd
 import numpy
 
 
+st.set_page_config(
+    page_title="F1 Telemetry App",
+    page_icon="🏎️",
+)
 
 st.title("Data Driven Business Lab")
 st.subheader("F1 project")
 st.markdown("""
-Welcome to the DDBL F1 project.
+Welcome to the DDBL F1 project. This is a project created during the semester to see what the possibilities 
 """)
 
 

@@ -2,8 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy
 
-def stats(dataframe):
-    st.header
+
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="🧊",
+)
 
 st.title("Data Driven Business Lab")
 st.subheader("F1 project")
