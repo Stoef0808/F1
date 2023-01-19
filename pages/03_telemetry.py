@@ -157,21 +157,3 @@ fig.update_layout(
     
 st.plotly_chart(fig)
 
-
-
-"""
-laps = pd.concat([pl1,pl2])
-player = laps['lap_number'].unique().tolist()
-
-
-players = st.sidebar.multiselect("select laps", player)
-
-
-dfs = {player: laps[laps["lap_number"] == player] for player in players}
-
-fig = go.Figure()
-for player, laps in dfs.items():
-    fig = fig.add_trace(go.Scatter(x=laps["binIndex"], y=laps["velocity_X"], name=player))
-
-    st.plotly_chart(fig)
-"""
